@@ -1,0 +1,35 @@
+#number_input {
+    display: inline-block;
+
+    min-width: 500px;
+    height: 40px;
+    font-size: 28px;
+    padding: 6px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#start_calc {
+    display: inline-block;
+
+    min-width: 120px;
+    height: 40px;
+    font-size: 20px;
+    
+    padding: 6px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+
+    color: white;
+    background-color: #256ef5;
+
+    border-radius: 5px;
+    border: 1px solid gray;
+
+    transform: translateY(-1px);
+}

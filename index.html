@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <link rel="stylesheet" href="src/css/style.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
         <py-env>
             - numpy
@@ -10,6 +11,11 @@
     </head>
     
     <body>
+        <div id="input">
+            <input type="number" id="number_input" min=1 max=10000000 placeholder="계산할 숫자를 입력해주세요">
+            <button id="start_calc" pys-onClick="make_graph">그래프 만들기</button>
+        </div>
+
         <div id="plot"></div>
         <py-script output="plot" src="src/scripts/main.py"></py-script>
     </body>
