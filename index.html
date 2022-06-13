@@ -9,14 +9,15 @@
             - matplotlib
         </py-env>
     </head>
-    
+
     <body>
         <div id="input">
-            <input type="number" id="number_input" min=1 max=10000000 placeholder="계산할 숫자를 입력해주세요">
+            <input type="number" id="number_input" min=1 max=100000000 placeholder="계산할 숫자를 입력해주세요" pys-onInput="number_update">
             <button id="start_calc" pys-onClick="make_graph">그래프 만들기</button>
         </div>
 
         <div id="plot"></div>
+        <div id="data_value"></div>
         <py-script output="plot" src="src/scripts/main.py"></py-script>
     </body>
 </html>
