@@ -1,13 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.5.1/core.css">
         <link rel="stylesheet" href="src/css/style.css" />
         <script type="module" src="https://pyscript.net/releases/2025.5.1/core.js"></script>
-        <py-env>
-            - numpy
-            - matplotlib
-        </py-env>
     </head>
 
     <body>
@@ -19,6 +15,6 @@
         <div id="plot"></div>
         <div id="data_value"></div>
         <a href="http://www.ericr.nl/wondrous/delrecs.html">3n+1 지연 기록</a>
-        <py-script output="plot" src="src/scripts/main.py"></py-script>
+        <script type="py" src="./main.py" config="./pyscript.toml"></py-script>
     </body>
 </html>
