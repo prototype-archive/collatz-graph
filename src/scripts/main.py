@@ -1,7 +1,7 @@
 import re
 import numpy as np
 from matplotlib import pyplot as plt
-from pyweb import pydom
+from pyscript.web import page
 from pyscript import display
 
 def calc_value(value):
@@ -21,7 +21,7 @@ ax.set(xlabel='loop', ylabel='number')
 ax.grid()
 
 data_dict = {}
-number_input = pydom["#number_input"][0]
+number_input = page["#number_input"][0]
 
 cache_size = int(1e7)
 cache = np.zeros(cache_size, dtype=np.uint64)
@@ -56,7 +56,7 @@ def make_graph(*args, **kwargs):
         data_dict[value] = [max(data), len(data)]
         write_plot(data)
 
-    pydom["#data_value"].innerText = "Max value: {}\n{} loops".format(*data_dict[value])
+    page["#data_value"].innerText = "Max value: {}\n{} loops".format(*data_dict[value])
 
 def write_plot(data):
     ax.plot(data)
