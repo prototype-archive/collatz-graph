@@ -1,5 +1,2 @@
-name = "Matplotlib"
-packages = ["matplotlib"]
-
-name = "Numpy"
-packages = ["numpy"]
+name = "Collatz Graph"
+packages = ["matplotlib", "numpy"]
